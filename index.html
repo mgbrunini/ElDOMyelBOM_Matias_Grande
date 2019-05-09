@@ -3,39 +3,49 @@
   <head>
     <meta charset="utf-8">
     <script type="text/javascript" src="js/javascript.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>Registro de estudiantes</title>
   </head>
   <body>
-    <h1>Registro Estudiante</h1>
-    <br>
-    <form id="formulario">
-    <b>Código:</b><br>
-    <input type="text" id="codigo">
-    <br>
-    <b>Nombre:</b><br>
-    <input type="text" id="nombre">
-    <br>
-    <b>Nota:</b><br>
-    <input type="text" id="nota">
 
-    <br><br>
-    <!--El return false es para que no refresque la pagina, en la linea 22 -->
-    <button type="submit" name="button" onclick="registro(); return false;" required>Registrar estudiante</button>
-    <button type="button" name="button" onclick="promedio()" required>Mostrar promedio</button>
-    <button type="button" name="button" onclick="mayor()" required>Mostrar nota mayor</button>
-    <button type="button" name="button" onclick="menor()" required>Mostrar nota menor</button>
-    </form>
-    <br>
-    <br>
-    <h1>Listado de estudiantes</h1>
-    <table id="tabla" border="1">
-      <tr>
-        <td>Código</td>
-        <td>Nombre</td>
-        <td>Nota</td>
-      </tr>
-    </table>
+    <div id="cabecera">
+      <h2>Registro Estudiante</h2>
+    </div>
 
+    <div id="contenedor">
+      <form id="formulario">
+        <b>Código:</b><br>
+        <input type="text" id="codigo">
+        <br>
+        <b>Nombre:</b><br>
+        <input type="text" id="nombre">
+        <br>
+        <b>Nota:</b><br>
+        <input type="text" id="nota">
 
+        <br><br><br>
+        <!--El return false es para que no refresque la pagina, en la linea 22 -->
+        <button type="submit" name="button" onclick="registro(); return false;" required>Registrar estudiante</button>
+        <button type="button" name="button" onclick="promedio()" required>Mostrar promedio</button>
+        <button type="button" name="button" onclick="mayor()" required>Mostrar nota mayor</button>
+        <button type="button" name="button" onclick="menor()" required>Mostrar nota menor</button>
+      </form>
+    </div>
+      <br>
+      <br>
+    <div id="cabecera2">
+      <h2>Listado de estudiantes</h2>
+    </div>
+
+    <div id="contenedor2">
+      <table id="tabla" border="1">
+        <tr>
+          <td>Código</td>
+          <td>Nombre</td>
+          <td>Nota</td>
+        </tr>
+      </table>
+    </div>
+    
   </body>
 </html>
