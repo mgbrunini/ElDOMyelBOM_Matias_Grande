@@ -2,33 +2,40 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <title>Registro de estudiantes</title>
   </head>
   <body>
     <h1>Registro Estudiante</h1>
     <br>
+    <form id="formulario">
     <b>Código:</b><br>
-    <input type="text" name="" value="">
+    <input type="text" id="codigo">
     <br>
     <b>Nombre:</b><br>
-    <input type="text" name="" value="">
+    <input type="text" id="nombre">
     <br>
     <b>Nota:</b><br>
-    <input type="text" name="" value="">
+    <input type="text" id="nota">
+
     <br><br>
-    <button type="button" name="button">Registrar estudiante</button>
-    <button type="button" name="button">Mostrar promedio</button>
-    <button type="button" name="button">Mostrar nota mayor</button>
-    <button type="button" name="button">Mostrar nota menor</button>
+    <!--El return false es para que no refresque la pagina, en la linea 22 -->
+    <button type="submit" name="button" onclick="registro(); return false;" required>Registrar estudiante</button>
+    <button type="button" name="button" onclick="promedio()" required>Mostrar promedio</button>
+    <button type="button" name="button" onclick="mayor()" required>Mostrar nota mayor</button>
+    <button type="button" name="button" onclick="menor()" required>Mostrar nota menor</button>
+    </form>
     <br>
     <br>
     <h1>Listado de estudiantes</h1>
-    <table border="1">
+    <table id="tabla" border="1">
       <tr>
         <td>Código</td>
         <td>Nombre</td>
         <td>Nota</td>
       </tr>
     </table>
+
+
   </body>
 </html>
