@@ -52,7 +52,7 @@ function mayor(){
   var i;
   for (i = 0; i < json.estudiante.length; i++) {
       if (json.estudiante[i].nota >= Nmayor) {
-          Nmayor = json.estudiante[i].nota;
+          Nmayor = parseInt(json.estudiante[i].nota);
       }
   }
   for (i = 0; i < json.estudiante.length; i++) {
@@ -72,7 +72,7 @@ function menor(){
   var j;
   for (j = 0; j < json.estudiante.length; j++) {
       if (json.estudiante[j].nota <= Nmenor) {
-          Nmenor = json.estudiante[j].nota;
+          Nmenor = parseInt(json.estudiante[j].nota);
       }
   }
   for (j = 0; j < json.estudiante.length; j++) {
